@@ -5,7 +5,7 @@ const express = require('express');
 const {getLatLong} = require('./api/mapbox');
 const {getWeatherDetails} = require('./api/forecast');
 
-const port = process.env.port;
+const port = process.env.PORT;
 const app = express();
 const publicFolderPath = path.join(__dirname, '../public');
 const viewsFolderPath = path.join(__dirname, '../templates/views');

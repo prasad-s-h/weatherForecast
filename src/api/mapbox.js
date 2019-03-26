@@ -5,7 +5,7 @@
 const request = require('request');
 
 const getLatLong = (address, callback) => {
-    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(address)}.json?access_token=${process.env.mapboxAPI}`;
+    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${encodeURIComponent(address)}.json?access_token=${process.env.MAPBOXAPI}`;
     let mapboxMessage;
     request({url, json: true}, (error, { body } ) => {
         if(error) {
