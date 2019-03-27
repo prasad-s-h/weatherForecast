@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "node src/app.js",
-    "dev": "env-cmd config/dev.env node src/app.js",
+    "dev": "env-cmd config/dev.env nodemon src/app.js -e js,hbs",
     "test": "env-cmd config/test.env"
   },
   "keywords": [],
